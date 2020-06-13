@@ -23,7 +23,9 @@ namespace apm_service.Controllers
         [HttpGet("{app}")]
         public PackageManifest Get(string app)
         {
+            if (PackageList.PackagesDic.ContainsKey(app))
             return  PackageList.PackagesDic[app];
+            return new PackageManifest() { AppName = "" };
         }
 
         [HttpGet("{app}/{fn}")]

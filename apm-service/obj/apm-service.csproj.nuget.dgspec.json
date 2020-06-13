@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-service\\apm-service.csproj": {}
+    "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-service\\apm-service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\apm-get.csproj": {
+    "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\apm-get.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\apm-get.csproj",
+        "projectUniqueName": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\apm-get.csproj",
         "projectName": "apm-get",
-        "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\apm-get.csproj",
+        "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\apm-get.csproj",
         "packagesPath": "C:\\Users\\MVi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\obj\\",
+        "outputPath": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-service\\apm-service.csproj": {
+    "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-service\\apm-service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-service\\apm-service.csproj",
+        "projectUniqueName": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-service\\apm-service.csproj",
         "projectName": "apm-service",
-        "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-service\\apm-service.csproj",
+        "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-service\\apm-service.csproj",
         "packagesPath": "C:\\Users\\MVi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-service\\obj\\",
+        "outputPath": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\apm-get.csproj": {
-                "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get\\apm-get\\apm-get.csproj"
+              "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\apm-get.csproj": {
+                "projectPath": "C:\\Users\\MVi\\source\\repos\\apm-get2\\apm-get\\apm-get.csproj"
               }
             }
           }

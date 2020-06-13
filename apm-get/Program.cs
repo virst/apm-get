@@ -13,9 +13,10 @@ namespace apm_get
     {
         static Config c;
         const string fn = "ApmConfig.json";
+        const string fn2 = "PackageInfoList.xml";
         static readonly Dictionary<string, MethodInfo> methods = new Dictionary<string, MethodInfo>(StringComparer.OrdinalIgnoreCase);
         static WebClient webClient = new WebClient();
-
+        static PackageInfoList ppl;
         static Program()
         {
             var s = File.ReadAllText(fn);
@@ -29,6 +30,14 @@ namespace apm_get
 
         static void Main(string[] args)
         {
+            var pth = Path.Combine(c.AppFolder, p.AppName);
+            Directory.CreateDirectory(pth);
+           
+            if (File.Exists(Path.Combine(c.AppFolder, fn2)))
+                ppl = XmlSer<PackageInfoList>.FromString(File.ReadAllText(Path.Combine(c.AppFolder, fn2)));
+            else
+                ppl = new PackageInfoList();
+
             if (args.Length == 0) return;
             if (!methods.ContainsKey(args[0]))
             {
@@ -36,6 +45,8 @@ namespace apm_get
                 return;
             }
             methods[args[0]].Invoke(null, args[1..]);
+
+            File.WriteAllText(Path.Combine(c.AppFolder, fn2), XmlSer<PackageInfoList>.ToXmlString(ppl));
         }
 
         public static void List()
@@ -58,9 +69,18 @@ namespace apm_get
             s = s.Replace("type", "Type");
             s = s.Replace("content", "Content");
             PackageManifest p = JsonSerializer.Deserialize<PackageManifest>(s);
+            if(string.IsNullOrWhiteSpace(p.AppName))
+            {
+                Console.WriteLine("Package not available!");
+                return;
+            }
             Console.WriteLine("Installing = {0}", p.AppName);
+            if(ppl.Contains(p.AppName))
+            {
+                Console.WriteLine("Installed");
+                return;
+            }
             var pth = Path.Combine(c.AppFolder, p.AppName);
-            Directory.CreateDirectory(pth);
             for (int i = 0; i < p.Actions.Count;)
             {
                 var a = p.Actions[i++];
@@ -71,12 +91,15 @@ namespace apm_get
                         webClient.DownloadFile(c.ApiUrl + @$"/Actions/{app}/{i - 1}", Path.Combine(pth, a.Content));
                         break;
                     case PackageManifest.ActionType.Delete:
+                        File.Delete(Path.Combine(pth, a.Content));
                         break;
                     case PackageManifest.ActionType.Run:
                         Process.Start(Path.Combine(pth, a.Content));
                         break;
                 }
             }
+            foreach (var d in p.Dependencies)
+                Install(d);
         }
     }
 }
