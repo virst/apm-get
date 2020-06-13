@@ -21,6 +21,7 @@ namespace apm_service
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:6000", "https://*:6001");
                 });
     }
 }

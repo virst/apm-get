@@ -30,8 +30,7 @@ namespace apm_get
 
         static void Main(string[] args)
         {
-            var pth = Path.Combine(c.AppFolder, p.AppName);
-            Directory.CreateDirectory(pth);
+            Directory.CreateDirectory(c.AppFolder);
            
             if (File.Exists(Path.Combine(c.AppFolder, fn2)))
                 ppl = XmlSer<PackageInfoList>.FromString(File.ReadAllText(Path.Combine(c.AppFolder, fn2)));
@@ -81,6 +80,7 @@ namespace apm_get
                 return;
             }
             var pth = Path.Combine(c.AppFolder, p.AppName);
+            Directory.CreateDirectory(pth);
             for (int i = 0; i < p.Actions.Count;)
             {
                 var a = p.Actions[i++];
@@ -98,6 +98,7 @@ namespace apm_get
                         break;
                 }
             }
+            ppl.Add(p.AppName);
             foreach (var d in p.Dependencies)
                 Install(d);
         }
