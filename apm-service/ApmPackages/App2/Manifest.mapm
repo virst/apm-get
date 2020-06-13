@@ -1,0 +1,10 @@
+{
+  "AppName": "TestApp2",
+  "Dependencies": [],
+  "Actions": [
+    {
+      "Type": 0,
+      "Content": "TestApp.exe"
+    }
+  ]
+}

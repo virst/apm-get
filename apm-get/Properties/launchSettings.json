@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "apm-get": {
+      "commandName": "Project",
+      "commandLineArgs": "Install TestApp1"
+    }
+  }
+}

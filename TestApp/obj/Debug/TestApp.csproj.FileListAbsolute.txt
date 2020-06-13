@@ -1,0 +1,5 @@
+C:\Users\MVi\source\repos\apm-get\TestApp\bin\Debug\TestApp.exe
+C:\Users\MVi\source\repos\apm-get\TestApp\bin\Debug\TestApp.pdb
+C:\Users\MVi\source\repos\apm-get\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+C:\Users\MVi\source\repos\apm-get\TestApp\obj\Debug\TestApp.exe
+C:\Users\MVi\source\repos\apm-get\TestApp\obj\Debug\TestApp.pdb

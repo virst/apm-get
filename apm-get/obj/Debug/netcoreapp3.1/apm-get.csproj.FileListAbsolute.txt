@@ -1,0 +1,12 @@
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.exe
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.deps.json
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.runtimeconfig.json
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.runtimeconfig.dev.json
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.dll
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\apm-get.pdb
+C:\Users\MVi\source\repos\apm-get\apm-get\obj\Debug\netcoreapp3.1\apm-get.csprojAssemblyReference.cache
+C:\Users\MVi\source\repos\apm-get\apm-get\obj\Debug\netcoreapp3.1\apm-get.AssemblyInfoInputs.cache
+C:\Users\MVi\source\repos\apm-get\apm-get\obj\Debug\netcoreapp3.1\apm-get.AssemblyInfo.cs
+C:\Users\MVi\source\repos\apm-get\apm-get\obj\Debug\netcoreapp3.1\apm-get.dll
+C:\Users\MVi\source\repos\apm-get\apm-get\obj\Debug\netcoreapp3.1\apm-get.pdb
+C:\Users\MVi\source\repos\apm-get\apm-get\bin\Debug\netcoreapp3.1\ApmConfig.json
